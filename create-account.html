@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | Mbarara University of Science and Technology</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="account-page">
+    <!-- A decorative copy of the login page sits behind the registration form.
+         It has no controls and is hidden from screen readers. -->
+    <div class="login-backdrop" aria-hidden="true">
+        <div class="site-header">
+            <img src="images/must-logo.png"
+                 alt="Mbarara University of Science and Technology logo" class="logo">
+            <p class="backdrop-title">MBARARA UNIVERSITY OF SCIENCE AND TECHNOLOGY</p>
+        </div>
+        <div class="login-card">
+            <div class="login-panel">
+                <p class="backdrop-heading">Login</p>
+                <p class="preview-label">Student Number or Email</p>
+                <div class="preview-field"></div>
+                <p class="preview-label">Password</p>
+                <div class="preview-field"></div>
+                <div class="preview-button">Login</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The light overlay and clear registration form remain separate from the blur. -->
+    <main class="registration-overlay">
+        <section class="registration-card" aria-labelledby="registration-heading">
+            <a class="close-link" href="index.html" aria-label="Close create account and return to login">&times;</a>
+
+            <!-- University logo and heading -->
+            <img src="images/must-logo.png"
+                 alt="Mbarara University of Science and Technology logo" class="logo">
+            <h1 class="registration-university">MBARARA UNIVERSITY OF SCIENCE AND TECHNOLOGY</h1>
+            <h2 id="registration-heading">Create Account</h2>
+
+            <!-- Registration form. Phone number is optional. -->
+            <form>
+                <div class="form-field">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname"
+                           autocomplete="name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="studentnumber">Student Number</label>
+                    <input type="text" id="studentnumber" name="studentnumber" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"
+                           autocomplete="email" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone"
+                           autocomplete="tel">
+                </div>
+
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password"
+                           autocomplete="new-password" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password"
+                           autocomplete="new-password" required>
+                </div>
+
+                <!-- This button illustrates the interface; no account is submitted or saved. -->
+                <button type="button">Create Account</button>
+            </form>
+
+            <!-- Return to the login page -->
+            <p class="account-link">Already have an account? <a href="index.html">Login</a></p>
+        </section>
+    </main>
+</body>
+</html>

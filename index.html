@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Mbarara University of Science and Technology</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- University logo and heading -->
+    <header class="site-header">
+        <img src="images/must-logo.png"
+             alt="Mbarara University of Science and Technology logo" class="logo">
+        <h1>MBARARA UNIVERSITY OF SCIENCE AND TECHNOLOGY</h1>
+    </header>
+
+    <main class="login-card">
+        <!-- Student login form -->
+        <section class="login-panel" aria-labelledby="login-heading">
+            <h2 id="login-heading">Login</h2>
+
+            <form>
+                <div class="form-field">
+                    <label for="student">Student Number or Email</label>
+                    <input type="text" id="student" name="student"
+                           autocomplete="username" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password"
+                           autocomplete="current-password" required>
+                </div>
+
+                <!-- A static button prevents this demonstration from sending passwords. -->
+                <button type="button">Login</button>
+            </form>
+
+            <!-- Link to account creation page -->
+            <p class="account-link">
+                <a href="create-account.html">Create Account</a>
+            </p>
+        </section>
+    </main>
+</body>
+</html>
